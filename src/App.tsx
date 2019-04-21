@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import { Link } from "react-router-dom";
 
 class App extends Component {
   render() {
@@ -12,6 +13,12 @@ class App extends Component {
         </div>
 
         <div className="container">
+          <p>
+            <strong>alpha1.0.0 Changelog</strong>
+          </p>
+          <p>New Feature: Changelog</p>
+          <p>New Program: Ray Terminal!</p>
+          <p>Program update:New Content: Ray Music!</p>
           <h1>What is rayOS?</h1>
           <p>
             Well, it's an operating system scroll down to find the stock apps
@@ -19,7 +26,12 @@ class App extends Component {
             along with some Questions and their Answers.
           </p>
           <h2>Ready Programs.</h2>
-          <p>Ray Music! (Version Alpha 0.9)</p>
+          <p>
+            <Link to="/raymusic">Ray Music! (Version Alpha 1.0.0)</Link>
+          </p>
+          <p>
+            <Link to="/rayterminal">Ray Terminal! (alpha0.1.0)</Link>
+          </p>
           <h3>What is an OS?</h3>
           <p>
             OS stands for Operating System which is what{" "}
@@ -36,13 +48,13 @@ class App extends Component {
           </p>
           <h5>When will it be annouced?</h5>
           <p>
-            Maybe at the end of <strong>SUMMER 2019.</strong>
+            Maybe at the end of <strong>SUMMER 2020.</strong>
           </p>
           <h6>
             <strong>So... What is rayOS?</strong>
           </h6>
           <p>It's just one of the many differant versions of linux.</p>
-          <p>Website Version Alpha 0.8.9-Final</p>
+          <p>Website Version offical Alpha release 1.0.0</p>
         </div>
       </>
     );

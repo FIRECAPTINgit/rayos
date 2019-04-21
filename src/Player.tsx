@@ -1,20 +1,33 @@
 import React, { Component } from "react";
 
+interface File {
+  title: string;
+  filename: string;
+}
+
 export default class Player extends Component {
   audio = document.createElement("audio");
   render() {
+    const files: File[] = [
+      { title: "music test 00:08", filename: "musictest.wav" },
+      {
+        title: "Faded (NCS) 04:20",
+        filename: "Alan Walker  Fade NCS Release.mp3"
+      },
+      {
+        title: "Mighty Power of God 01:58",
+        filename: "00_001 - I Sing the Mighty Power of God.mp3"
+      },
+      {
+        title: "Bright and Beatiful 02:54",
+        filename: "00_002 - All Things Bright and Beautiful.mp3"
+      }
+    ];
+
     return (
       <div className="App">
-        <button type="button" data-file="musictest.wav" onClick={this.play}>
-          music test 00:08
-        </button>
-        <button
-          type="button"
-          data-file="Alan Walker  Fade NCS Release.mp3"
-          onClick={this.play}
-        >
-          Faded (NCS) 04:20
-        </button>
+        {files.map(this.renderFile)}
+
         <button type="button" className="stop" onClick={this.stop}>
           <img src="Stopicon.png" />
         </button>
@@ -39,5 +52,18 @@ export default class Player extends Component {
   };
   pause = () => {
     this.audio.pause();
+  };
+
+  private renderFile = (file: File) => {
+    return (
+      <button
+        key={file.filename}
+        type="button"
+        data-file={file.filename}
+        onClick={this.play}
+      >
+        {file.title}
+      </button>
+    );
   };
 }
