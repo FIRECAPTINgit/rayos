@@ -14,47 +14,36 @@ class App extends Component {
 
         <div className="container">
           <p>
-            <strong>alpha1.0.0 Changelog</strong>
+            <strong>alpha1.9 Changelog</strong>
           </p>
-          <p>New Feature: Changelog</p>
-          <p>New Program: Ray Terminal!</p>
-          <p>Program update:New Content: Ray Music!</p>
+          <p>Feature: Beta Program</p>
+          <p>Change: Temporarily removed programs feature.</p>
+          <p>Feature: Signup/Login Screen</p>
           <h1>What is rayOS?</h1>
           <p>
-            Well, it's an operating system scroll down to find the stock apps
-            that <strong>I MADE MY SELF</strong> and use them before downloading
-            along with some Questions and their Answers.
+            RayOS is an Operating System (OS)
           </p>
-          <h2>Ready Programs.</h2>
-          <p>
-            <Link to="/raymusic">Ray Music! (Version Alpha 1.0.0)</Link>
-          </p>
-          <p>
-            <Link to="/rayterminal">Ray Terminal! (alpha0.1.0)</Link>
-          </p>
+          <h2>Beta Program</h2>
+          <p>This Is The Link To The Beta Progam where <strong>YOU</strong> Get To Try Out Pre-Release Versions!</p>
+          <Link to="/signup">Join Beta Program</Link>
           <h3>What is an OS?</h3>
           <p>
-            OS stands for Operating System which is what{" "}
-            <strong>YOUR USING RIGHT NOW!</strong> If your on a computer you
-            might be using windows or macOSX or linux (lin-uh ks) or solaris
-            *GASPS*. If your on a laptop your probaly using macOSX or windows or
-            ChromeOS. if your on a phone your probaly using IOS, Android, or
-            KaiOS.
+            OS... Or Operating System... "Is software that controls the operation of a computer and directs the processing of programs (as by assigning storage space in memory and controlling input and output functions) Source: Merriam Webster
+"
           </p>
-          <h4>What version is rayOS in?</h4>
+          <h4>How many version are there?</h4>
           <p>
-            It hasn't been annouced yet. It isn't even in delevelopment yet.
-            It's just an idea.
+            There Are Three Being considered: rayOS Home+, rayOS Business+, And rayOS Mobile. Then There Are Two in development: rayOS Home, And rayOS Business.
           </p>
-          <h5>When will it be annouced?</h5>
+          <h5>When will Alpha1.0 released?</h5>
           <p>
-            Maybe at the end of <strong>SUMMER 2020.</strong>
+            Maybe at the mid <strong>SUMMER 2019.</strong>
           </p>
           <h6>
             <strong>So... What is rayOS?</strong>
           </h6>
-          <p>It's just one of the many differant versions of linux.</p>
-          <p>Website Version offical Alpha release 1.0.0</p>
+          <p>It's Just a few of the many Operating Systems.</p>
+          <p>Alpha1.9</p>
         </div>
       </>
     );

@@ -6,13 +6,16 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Player from "./Player";
 import Terminal from "./terminal";
+import Signup from "./Signup";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/raymusic" component={Player} />
       <Route path="/rayterminal" component={Terminal} />
+      <Route path="/signup" component={Signup} />
       <Route component={App} />
+      
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
